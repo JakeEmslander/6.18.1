@@ -1,4 +1,3 @@
-# 6.18.1
 def get_num_of_characters(inputStr):
     characters = 0
     for letter in inputStr:
@@ -6,9 +5,10 @@ def get_num_of_characters(inputStr):
     return characters
 
 def output_without_whitespace(inputStr):
-    output='';
+    output=''
+    output.replace(' ', '')
     for letter in inputStr:
-        if letter !='\t':
+        if letter !='\t, \s':
             output += letter
     return output
 
